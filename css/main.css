@@ -200,6 +200,11 @@ ul li {
     border: 10px solid #17ad37;
     padding-bottom: 50px;
   }
+
+  .out__one::after,
+  .out__one::before {
+    width: 30px;
+  }
 }
 
 /* decor */
