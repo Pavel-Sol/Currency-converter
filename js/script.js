@@ -17,7 +17,6 @@ function start() {
             return data.json()
         })
         .then((data) => {
-            console.log(data.rates)
             outInfo(data)
         })
 }
