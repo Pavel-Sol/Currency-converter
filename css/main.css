@@ -1,0 +1,91 @@
+/* ------------ОБНУЛЕНИЕ-------- */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 1;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+/* -------------------------- */
+body {
+  padding: 50px 100px;
+}
+button {
+  background: #c8e98c;
+  text-align: center;
+  margin: 40px auto;
+  border: 1px solid #000000;
+  cursor: pointer;
+  padding: 7px 15px;
+  border: 1px solid #000000;
+
+}
+input {
+  background: #f7e1e1;
+  border: 1px solid #000000;
+  margin: 20px;
+  min-height: 30px;
+}
+
+hr {
+  height: 1px;
+  width: 70%;
+  background-color: black;
+  margin-bottom: 20px;
+}
+
+textarea {
+  border: 1px solid #000000;
+}
