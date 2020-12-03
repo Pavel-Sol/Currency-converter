@@ -203,7 +203,10 @@ ul li {
 
   .out__one::after,
   .out__one::before {
-    width: 0;
+    left: 0;
+    width: 100%;
+    top: 23px;
+    background: rgba(0, 0, 0, 0.2);
   }
 }
 
