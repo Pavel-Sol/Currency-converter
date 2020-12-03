@@ -10,6 +10,7 @@
 *:after {
   box-sizing: border-box;
 }
+
 :focus,
 :active {
   outline: none;
@@ -33,6 +34,7 @@ body {
   height: 100%;
   font-size: 14px;
   line-height: 1;
+  font-family: 'Montserrat';
 }
 
 input,
@@ -58,34 +60,127 @@ ul li {
   margin: 0px;
   padding: 0px;
 }
+
 /* -------------------------- */
-body {
-  padding: 50px 100px;
+.app {
+  padding: 50px 0px;
+  background: linear-gradient(rgb(119, 241, 119), rgb(16, 85, 13));
+  height: 100%;
 }
-button {
-  background: #c8e98c;
+
+.app__card {
+  max-width: 400px;
+  margin: 0px auto;
+  min-height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.form {
+  margin-bottom: 50px;
+}
+
+.form__item {
+  width: 45%;
+}
+
+.form__item__label {
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.select__wrap {
+  position: relative;
+}
+
+.select__wrap::after,
+.select__wrap::before {
+  position: absolute;
+  content: "";
+  background: rgba(51, 51, 51, 0.5);
+  width: 10px;
+  height: 2px;
+  top: 22px;
+  z-index: 5;
+}
+
+.select__wrap::before {
+  transform: rotate(45deg);
+  right: 18px;
+}
+
+.select__wrap::after {
+  transform: rotate(-45deg);
+  right: 12px;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  padding: 0px 15px;
+  appearance: none;
+  transition: all 0.5s ease 0s;
+}
+
+.input:focus {
+  border: 2px solid rgb(77, 238, 112);
+}
+
+.amount {
+  width: 100%;
+  margin: 0px auto 20px auto;
+}
+
+.form__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ----------------------- */
+.out {
   text-align: center;
-  margin: 40px auto;
-  border: 1px solid #000000;
-  cursor: pointer;
-  padding: 7px 15px;
-  border: 1px solid #000000;
-
-}
-input {
-  background: #f7e1e1;
-  border: 1px solid #000000;
-  margin: 20px;
-  min-height: 30px;
 }
 
-hr {
-  height: 1px;
-  width: 70%;
-  background-color: black;
-  margin-bottom: 20px;
+.out__one {
+  color: #17ad37;
+  position: relative;
 }
 
-textarea {
-  border: 1px solid #000000;
+.out__one::after,
+.out__one::before {
+  position: absolute;
+  content: '';
+  background: rgba(0, 0, 0, 0.5);
+  top: 50%;
+  height: 2px;
+  width: 49px;
+}
+
+.out__one::after {
+  left: 15px;
+}
+
+.out__one::before {
+  right: 15px;
+}
+
+.out__all {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.out__all__to {
+  padding-left: 10px;
+  font-size: 22px;
 }
